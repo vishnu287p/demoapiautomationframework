@@ -3,6 +3,8 @@ package com.api.tests;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthService;
+import com.api.models.request.LoginRequest;
+import com.api.models.response.LoginResponse;
 
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
@@ -13,12 +15,14 @@ public class LoginTest {
 
 	@Test
 	public void loginTest() {
-
+		LoginRequest loginrequest = new LoginRequest("eve.holt@reqres.in", "cityslicka");
 		AuthService auth = new AuthService();
-		Response response = auth.login("{\"email\": \"eve.holt@reqres.in\",\"password\": \"cityslicka\"}");
-		System.out.println(response.asPrettyString());
+		Response response = auth.login(loginrequest);
+		LoginResponse loginresponse = response.as(LoginResponse.class);
+		System.out.println(response.asPrettyString());	
+		System.out.println(loginresponse.getToken());
 		
-		Assert.assertEquals(response.getStatusCode(), 200);
+		Assert.assertTrue(loginresponse.getToken() != null);
 	}
 	
 	
