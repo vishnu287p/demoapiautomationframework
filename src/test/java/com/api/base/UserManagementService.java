@@ -1,5 +1,7 @@
 package com.api.base;
 
+import com.api.models.request.UpdateRequest;
+
 import io.restassured.response.Response;
 
 public class UserManagementService extends BaseService{
@@ -8,5 +10,9 @@ public class UserManagementService extends BaseService{
 	
 	public Response getSingleUser() {
 		return getRequest(BASE_PATH+"/2");
+	}
+	
+	public Response updateSingleUser(UpdateRequest payload) {
+		return putRequest(payload, BASE_PATH+"/2");
 	}
 }

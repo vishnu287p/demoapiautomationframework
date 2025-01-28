@@ -9,12 +9,15 @@ import com.api.models.response.LoginResponse;
 import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 public class LoginTest {
 
 	@Test
 	public void testUserLogin() {
+
 		LoginRequest loginrequest = new LoginRequest("eve.holt@reqres.in", "cityslicka");
 		AuthService authService = new AuthService();
 		Response response = authService.login(loginrequest);

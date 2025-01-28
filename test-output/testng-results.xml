@@ -1,17 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-27T10:25:49 IST" name="Default suite" finished-at="2025-01-27T10:25:52 IST" duration-ms="3292">
+  <suite started-at="2025-01-28T10:18:52 IST" name="APITest" finished-at="2025-01-28T10:19:00 IST" duration-ms="8252">
     <groups>
     </groups>
-    <test started-at="2025-01-27T10:25:49 IST" name="Default test" finished-at="2025-01-27T10:25:52 IST" duration-ms="3292">
+    <test started-at="2025-01-28T10:18:52 IST" name="Test" finished-at="2025-01-28T10:19:00 IST" duration-ms="8252">
+      <class name="com.api.tests.RegisterTest">
+        <test-method signature="testUserInvalidRegistration()[pri:0, instance:com.api.tests.RegisterTest@1ea9f6af]" started-at="2025-01-28T10:18:57 IST" name="testUserInvalidRegistration" finished-at="2025-01-28T10:18:58 IST" duration-ms="896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserInvalidRegistration -->
+        <test-method signature="testUserRegistration()[pri:0, instance:com.api.tests.RegisterTest@1ea9f6af]" started-at="2025-01-28T10:18:58 IST" name="testUserRegistration" finished-at="2025-01-28T10:18:59 IST" duration-ms="822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+      </class> <!-- com.api.tests.RegisterTest -->
       <class name="com.api.tests.UserManagementTest">
-        <test-method signature="getSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@15eb5ee5]" started-at="2025-01-27T10:25:49 IST" name="getSingleUser" finished-at="2025-01-27T10:25:52 IST" duration-ms="3232" status="PASS">
+        <test-method signature="getSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@6a192cfe]" started-at="2025-01-28T10:18:59 IST" name="getSingleUser" finished-at="2025-01-28T10:18:59 IST" duration-ms="519" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUser -->
+        <test-method signature="updateSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@6a192cfe]" started-at="2025-01-28T10:18:59 IST" name="updateSingleUser" finished-at="2025-01-28T10:19:00 IST" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateSingleUser -->
       </class> <!-- com.api.tests.UserManagementTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.api.tests.LoginTest">
+        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.api.tests.LoginTest@708f5957]" started-at="2025-01-28T10:18:52 IST" name="testInvalidUserLogin" finished-at="2025-01-28T10:18:56 IST" duration-ms="4058" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message mismatch! expected [Missing password] but found [user not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message mismatch! expected [Missing password] but found [user not found]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.api.tests.LoginTest.testInvalidUserLogin(LoginTest.java:40)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserLogin -->
+        <test-method signature="testUserLogin()[pri:0, instance:com.api.tests.LoginTest@708f5957]" started-at="2025-01-28T10:18:56 IST" name="testUserLogin" finished-at="2025-01-28T10:18:57 IST" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+      </class> <!-- com.api.tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- APITest -->
 </testng-results>

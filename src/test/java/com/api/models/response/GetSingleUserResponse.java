@@ -1,6 +1,6 @@
 package com.api.models.response;
 
-public class UserManagementResponse {
+public class GetSingleUserResponse {
 
 	private Data data;
 	private Support support;
