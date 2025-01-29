@@ -165,7 +165,7 @@
                   </a> <!-- testInvalidUserLogin -->
                   <span class="method-name">testInvalidUserLogin</span>
                   <div class="stack-trace">java.lang.AssertionError: Error message mismatch! expected [Missing password] but found [user not found]
-	at com.api.tests.LoginTest.testInvalidUserLogin(LoginTest.java:40)
+	at com.api.tests.LoginTest.testInvalidUserLogin(LoginTest.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 30 stack frames
 </div> <!-- stack-trace -->
@@ -176,21 +176,14 @@
           <div class="suite-APITest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.api.tests.UserManagementTest</span>
+              <span class="class-name">com.api.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getSingleUser">
-                  </a> <!-- getSingleUser -->
-                  <span class="method-name">getSingleUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateSingleUser">
-                  </a> <!-- updateSingleUser -->
-                  <span class="method-name">updateSingleUser</span>
+                  <a name="testUserLogin">
+                  </a> <!-- testUserLogin -->
+                  <span class="method-name">testUserLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -220,14 +213,21 @@
           <div class="suite-APITest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.api.tests.LoginTest</span>
+              <span class="class-name">com.api.tests.UserManagementTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testUserLogin">
-                  </a> <!-- testUserLogin -->
-                  <span class="method-name">testUserLogin</span>
+                  <a name="getSingleUser">
+                  </a> <!-- getSingleUser -->
+                  <span class="method-name">getSingleUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateSingleUser">
+                  </a> <!-- updateSingleUser -->
+                  <span class="method-name">updateSingleUser</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -293,32 +293,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testInvalidUserLogin')
 data.setCell(0, 2, 'com.api.tests.LoginTest')
-data.setCell(0, 3, 4058);
+data.setCell(0, 3, 3137);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testUserInvalidRegistration')
-data.setCell(1, 2, 'com.api.tests.RegisterTest')
-data.setCell(1, 3, 896);
+data.setCell(1, 1, 'testUserLogin')
+data.setCell(1, 2, 'com.api.tests.LoginTest')
+data.setCell(1, 3, 491);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUserLogin')
-data.setCell(2, 2, 'com.api.tests.LoginTest')
-data.setCell(2, 3, 866);
+data.setCell(2, 1, 'testUserInvalidRegistration')
+data.setCell(2, 2, 'com.api.tests.RegisterTest')
+data.setCell(2, 3, 416);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testUserRegistration')
-data.setCell(3, 2, 'com.api.tests.RegisterTest')
-data.setCell(3, 3, 822);
+data.setCell(3, 1, 'updateSingleUser')
+data.setCell(3, 2, 'com.api.tests.UserManagementTest')
+data.setCell(3, 3, 402);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updateSingleUser')
-data.setCell(4, 2, 'com.api.tests.UserManagementTest')
-data.setCell(4, 3, 620);
+data.setCell(4, 1, 'testUserRegistration')
+data.setCell(4, 2, 'com.api.tests.RegisterTest')
+data.setCell(4, 3, 374);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'getSingleUser')
 data.setCell(5, 2, 'com.api.tests.UserManagementTest')
-data.setCell(5, 3, 519);
+data.setCell(5, 3, 142);
 window.suiteTableData['APITest']= { tableData: data, tableDiv: 'times-div-APITest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-APITest">
               </div> <!-- times-div-APITest -->
             </div> <!-- times-div -->
@@ -353,29 +353,29 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUserLogin</span>
-                <span class="method-start">4085 ms</span>
+                <span class="method-start">3162 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.api.tests.RegisterTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testUserInvalidRegistration</span>
-                <span class="method-start">4963 ms</span>
+                <span class="method-start">3663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUserRegistration</span>
-                <span class="method-start">5865 ms</span>
+                <span class="method-start">4084 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.api.tests.UserManagementTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getSingleUser</span>
-                <span class="method-start">6695 ms</span>
+                <span class="method-start">4461 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateSingleUser</span>
-                <span class="method-start">7225 ms</span>
+                <span class="method-start">4607 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,7 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class LoggingFilter implements Filter {
-    private static final Logger logger = LogManager.getLogger(LoggingFilter.class);
+    public static final Logger logger = LogManager.getLogger(LoggingFilter.class);
 
     @Override
     public Response filter(FilterableRequestSpecification requestSpec,
