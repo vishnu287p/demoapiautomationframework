@@ -15,4 +15,8 @@ public class UserManagementService extends BaseService{
 	public Response updateSingleUser(UpdateRequest payload) {
 		return putRequest(payload, BASE_PATH+"/2");
 	}
+	
+	public Response deleteSingerUser() {
+		return deleteRequest(BASE_PATH+"/2");
+	}
 }

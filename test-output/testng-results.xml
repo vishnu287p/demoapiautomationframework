@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T09:17:51 IST" name="APITest" finished-at="2025-01-29T09:17:57 IST" duration-ms="5265">
+  <suite started-at="2025-02-02T08:06:29 IST" name="APITest" finished-at="2025-02-02T08:06:40 IST" duration-ms="10427">
     <groups>
     </groups>
-    <test started-at="2025-01-29T09:17:51 IST" name="Test" finished-at="2025-01-29T09:17:57 IST" duration-ms="5265">
+    <test started-at="2025-02-02T08:06:29 IST" name="Test" finished-at="2025-02-02T08:06:40 IST" duration-ms="10427">
       <class name="com.api.tests.RegisterTest">
-        <test-method signature="testUserInvalidRegistration()[pri:0, instance:com.api.tests.RegisterTest@403f0a22]" started-at="2025-01-29T09:17:55 IST" name="testUserInvalidRegistration" finished-at="2025-01-29T09:17:56 IST" duration-ms="416" status="PASS">
+        <test-method signature="testUserInvalidRegistration()[pri:0, instance:com.api.tests.RegisterTest@503ecb24]" started-at="2025-02-02T08:06:38 IST" name="testUserInvalidRegistration" finished-at="2025-02-02T08:06:38 IST" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserInvalidRegistration -->
-        <test-method signature="testUserRegistration()[pri:0, instance:com.api.tests.RegisterTest@403f0a22]" started-at="2025-01-29T09:17:56 IST" name="testUserRegistration" finished-at="2025-01-29T09:17:56 IST" duration-ms="374" status="PASS">
+        <test-method signature="testUserRegistration()[pri:0, instance:com.api.tests.RegisterTest@503ecb24]" started-at="2025-02-02T08:06:38 IST" name="testUserRegistration" finished-at="2025-02-02T08:06:39 IST" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserRegistration -->
       </class> <!-- com.api.tests.RegisterTest -->
       <class name="com.api.tests.UserManagementTest">
-        <test-method signature="getSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@503ecb24]" started-at="2025-01-29T09:17:56 IST" name="getSingleUser" finished-at="2025-01-29T09:17:56 IST" duration-ms="142" status="PASS">
+        <test-method signature="deleteSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@4c51cf28]" started-at="2025-02-02T08:06:39 IST" name="deleteSingleUser" finished-at="2025-02-02T08:06:39 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleUser -->
+        <test-method signature="getSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@4c51cf28]" started-at="2025-02-02T08:06:39 IST" name="getSingleUser" finished-at="2025-02-02T08:06:39 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSingleUser -->
-        <test-method signature="updateSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@503ecb24]" started-at="2025-01-29T09:17:56 IST" name="updateSingleUser" finished-at="2025-01-29T09:17:57 IST" duration-ms="402" status="PASS">
+        <test-method signature="updateSingleUser()[pri:0, instance:com.api.tests.UserManagementTest@4c51cf28]" started-at="2025-02-02T08:06:39 IST" name="updateSingleUser" finished-at="2025-02-02T08:06:40 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateSingleUser -->
       </class> <!-- com.api.tests.UserManagementTest -->
       <class name="com.api.tests.LoginTest">
-        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.api.tests.LoginTest@dbd8e44]" started-at="2025-01-29T09:17:52 IST" name="testInvalidUserLogin" finished-at="2025-01-29T09:17:55 IST" duration-ms="3137" status="FAIL">
+        <test-method signature="testInvalidUserLogin()[pri:0, instance:com.api.tests.LoginTest@51acdf2e]" started-at="2025-02-02T08:06:30 IST" name="testInvalidUserLogin" finished-at="2025-02-02T08:06:37 IST" duration-ms="6690" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Error message mismatch! expected [Missing password] but found [user not found]]]>
@@ -72,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidUserLogin -->
-        <test-method signature="testUserLogin()[pri:0, instance:com.api.tests.LoginTest@dbd8e44]" started-at="2025-01-29T09:17:55 IST" name="testUserLogin" finished-at="2025-01-29T09:17:55 IST" duration-ms="491" status="PASS">
+        <test-method signature="testUserLogin()[pri:0, instance:com.api.tests.LoginTest@51acdf2e]" started-at="2025-02-02T08:06:37 IST" name="testUserLogin" finished-at="2025-02-02T08:06:38 IST" duration-ms="757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUserLogin -->

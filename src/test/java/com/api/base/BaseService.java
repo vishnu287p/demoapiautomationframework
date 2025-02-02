@@ -13,7 +13,6 @@ public class BaseService {
 //wrapper class for rest assured
 //BaseUri, Creating the REQUEST, Handling the RESPONSE
 
-	
 	private static final String Base_URL = "https://reqres.in/";
 	private RequestSpecification requestspecification;
 
@@ -31,5 +30,9 @@ public class BaseService {
 
 	protected Response putRequest(Object payload, String endpoint) {
 		return requestspecification.contentType(ContentType.JSON).body(payload).put(endpoint);
+	}
+
+	protected Response deleteRequest(String endpoint) {
+		return requestspecification.delete(endpoint);
 	}
 }

@@ -40,4 +40,16 @@ public class UserManagementTest extends LoggingFilter {
 		Assert.assertEquals(updateResponse.getJob(), "zion resident", "Job Mismatch!");
 		logger.info("*****updateSingleUser TestCase Finished *****");
 	}
+
+	@Test
+	public void deleteSingleUser() {
+		logger.info("*****deleteSingleUser TestCase Started *****");
+		UserManagementService userManagementService = new UserManagementService();
+		Response response = userManagementService.deleteSingerUser();
+
+		System.out.println(response.getStatusCode());
+
+		Assert.assertEquals(response.getStatusCode(), 204, "Status Code Mismatch!");
+		logger.info("*****deleteSingleUser TestCase Finished *****");
+	}
 }
